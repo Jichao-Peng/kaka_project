@@ -1,0 +1,8 @@
+prefix=/home/leo/Desktop/Kaka_Project/devel
+
+Name: kaka_vision_pkg
+Description: Description of kaka_vision_pkg
+Version: 0.0.0
+Cflags: -I/home/leo/Desktop/Kaka_Project/devel/include
+Libs: -L/home/leo/Desktop/Kaka_Project/devel/lib 
+Requires: message_runtime

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kaka_test_pkg
+Description: Description of kaka_test_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

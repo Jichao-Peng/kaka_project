@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kaka_serial_pkg
+Description: Description of kaka_serial_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

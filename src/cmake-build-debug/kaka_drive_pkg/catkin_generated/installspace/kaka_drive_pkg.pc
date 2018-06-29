@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kaka_drive_pkg
+Description: Description of kaka_drive_pkg
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: message_runtime

@@ -1,0 +1,18 @@
+//
+// Created by leo on 18-3-12.
+//
+
+#ifndef PROJECT_KAKADRIVE_H
+#define PROJECT_KAKADRIVE_H
+
+#include <opencv/opencv.>
+
+using namespace std;
+
+class KakaDrive
+{
+
+};
+
+
+#endif //PROJECT_KAKADRIVE_H

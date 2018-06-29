@@ -1,0 +1,13 @@
+-I/usr/include/qt4
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtCore
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="kaka_eyetohand_calibration_pkg"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-DQT_NO_KEYWORDS
+-o
+/home/leo/Desktop/Kaka_Project/src/cmake-build-debug/kaka_eyetohand_calibration_pkg/src/moc_KakaCalibration.cxx
+/home/leo/Desktop/Kaka_Project/src/kaka_eyetohand_calibration_pkg/src/KakaCalibration.h

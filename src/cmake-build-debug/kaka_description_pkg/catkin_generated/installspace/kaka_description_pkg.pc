@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kaka_description_pkg
+Description: Description of kaka_description_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

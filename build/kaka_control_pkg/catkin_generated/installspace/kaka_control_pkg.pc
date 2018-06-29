@@ -1,0 +1,8 @@
+prefix=/home/leo/Desktop/Kaka_Project/install
+
+Name: kaka_control_pkg
+Description: Description of kaka_control_pkg
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/leo/Desktop/Kaka_Project/install/lib 
+Requires: 

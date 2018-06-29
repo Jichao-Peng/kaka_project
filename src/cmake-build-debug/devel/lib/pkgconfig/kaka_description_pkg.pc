@@ -1,0 +1,8 @@
+prefix=/home/leo/Desktop/Kaka_Project/src/cmake-build-debug/devel
+
+Name: kaka_description_pkg
+Description: Description of kaka_description_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/leo/Desktop/Kaka_Project/src/cmake-build-debug/devel/lib 
+Requires: 

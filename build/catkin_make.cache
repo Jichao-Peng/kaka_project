@@ -1,0 +1,2 @@
+kaka_brain_pkg:kaka_control_pkg:kaka_description_pkg:kaka_drive_pkg:kaka_eyetohand_calibration_pkg:kaka_gripper_pkg:kaka_interface_pkg:kaka_serial_pkg:kaka_test_pkg:kaka_vision_pkg
+-DCATKIN_DEVEL_PREFIX=/home/leo/Desktop/Kaka_Project/devel -DCMAKE_INSTALL_PREFIX=/home/leo/Desktop/Kaka_Project/install -G Unix Makefiles

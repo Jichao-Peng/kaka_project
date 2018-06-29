@@ -1,0 +1,44 @@
+<launch>
+  <!-- 设置参数 -->
+  <arg name="debug" default="false" />
+
+  <arg name="use_gui" default="false" />
+
+  <!-- 导入URDF以及其他yaml文件，将参数导入server -->
+  <include file="$(find kaka_control_pkg)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+   <!-- 启动robot_state_publisher节点，发布机器人的tf -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+
+  <!-- pulish机器人状态 -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="/use_gui" value="$(arg use_gui)"/>
+    <rosparam param="/source_list">[/feedback_joint_states]</rosparam>
+  </node>
+
+  <!-- 启动moveit -->
+  <include file="$(find kaka_control_pkg)/launch/move_group.launch">
+    <arg name="allow_trajectory_execution" value="true"/>
+    <arg name="fake_execution" value="false"/><!-- 设置成false -->
+    <arg name="info" value="true"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+  <!-- 启动rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find kaka_eyetohand_calibration_pkg)/config.rviz" output="screen" />
+
+  <!-- 启动realsense -->
+  <include file="$(find realsense_camera)/launch/sr300_nodelet_rgbd.launch" />
+
+  <!-- 启动kaka_calibration_node节点 -->
+   <node name="kaka_calibration" pkg="kaka_eyetohand_calibration_pkg" type="kaka_eyetohand_calibration_node" output="screen"/> 
+
+   <!-- 启动kaka_drive_node节点 -->
+  <node name="kaka_drive" pkg="kaka_drive_pkg" type="kaka_drive_node" output="screen"/>
+
+   <!-- 启动kaka_serial_node节点 -->
+  <node name="kaka_serial" pkg="kaka_serial_pkg" type="kaka_serial_node" output="screen"/>
+
+</launch>

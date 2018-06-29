@@ -1,0 +1,82 @@
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/leo/Desktop/Kaka_Project/src
+-- Using CATKIN_DEVEL_PREFIX: /home/leo/Desktop/Kaka_Project/src/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /home/leo/Desktop/Kaka_Project/devel;/home/leo/Desktop/learning_pcl/devel;/opt/ros/indigo
+-- This workspace overlays: /home/leo/Desktop/Kaka_Project/devel;/home/leo/Desktop/learning_pcl/devel;/opt/ros/indigo
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/leo/Desktop/Kaka_Project/src/cmake-build-debug/test_results
+-- Found gtest sources under '/usr/src/gtest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.6.19
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 10 packages in topological order:
+-- ~~  - kaka_brain_pkg
+-- ~~  - kaka_gripper_pkg
+-- ~~  - kaka_serial_pkg
+-- ~~  - kaka_drive_pkg
+-- ~~  - kaka_eyetohand_calibration_pkg
+-- ~~  - kaka_test_pkg
+-- ~~  - kaka_vision_pkg
+-- ~~  - kaka_interface_pkg
+-- ~~  - kaka_description_pkg
+-- ~~  - kaka_control_pkg
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'kaka_brain_pkg'
+-- ==> add_subdirectory(kaka_brain_pkg)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+-- +++ processing catkin package: 'kaka_gripper_pkg'
+-- ==> add_subdirectory(kaka_gripper_pkg)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+-- +++ processing catkin package: 'kaka_serial_pkg'
+-- ==> add_subdirectory(kaka_serial_pkg)
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+-- +++ processing catkin package: 'kaka_drive_pkg'
+-- ==> add_subdirectory(kaka_drive_pkg)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+-- kaka_drive_pkg: 1 messages, 0 services
+-- +++ processing catkin package: 'kaka_eyetohand_calibration_pkg'
+-- ==> add_subdirectory(kaka_eyetohand_calibration_pkg)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+-- +++ processing catkin package: 'kaka_test_pkg'
+-- ==> add_subdirectory(kaka_test_pkg)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+-- +++ processing catkin package: 'kaka_vision_pkg'
+-- ==> add_subdirectory(kaka_vision_pkg)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+-- kaka_vision_pkg: 1 messages, 0 services
+-- +++ processing catkin package: 'kaka_interface_pkg'
+-- ==> add_subdirectory(kaka_interface_pkg)
+-- Using these message generators: gencpp;genlisp;genpy
+-- kaka_interface_pkg: 1 messages, 0 services
+-- +++ processing catkin package: 'kaka_description_pkg'
+-- ==> add_subdirectory(kaka_description_pkg)
+-- Using these message generators: gencpp;genlisp;genpy
+-- +++ processing catkin package: 'kaka_control_pkg'
+-- ==> add_subdirectory(kaka_control_pkg)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/leo/Desktop/Kaka_Project/src/cmake-build-debug

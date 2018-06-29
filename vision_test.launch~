@@ -1,0 +1,15 @@
+<launch>
+
+  <!-- 启动rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find kaka_vision_pkg)/config.rviz"/>
+
+  <!-- 启动openni2 -->
+  <include file="$(find openni2_launch)/launch/openni2.launch" /> 
+
+<!--  <include file="$(find realsense_camera)/launch/sr300_nodelet_rgbd.launch" />-->
+
+
+  <!-- 启动demo_node -->
+  <node name="kaka_vision" pkg="kaka_vision_pkg" type="kaka_vision_node" output="screen"  />
+
+</launch>
